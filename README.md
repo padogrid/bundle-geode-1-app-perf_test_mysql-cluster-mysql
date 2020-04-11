@@ -5,7 +5,7 @@ The `mysql` bundle is preconfigured to synchronize Geode/GemFire with MySQL runn
 ## Installing Bundle
 
 ```console
-install_bundle -download geode-1.11-cluster-app-mysql-perf_test_mysql
+install_bundle -download geode-1-cluster-app-mysql-perf_test_mysql
 ```
 
 ## Use Case
