@@ -5,7 +5,7 @@ The `mysql` bundle is preconfigured to synchronize Geode/GemFire with MySQL runn
 ## Installing Bundle
 
 ```console
-install_bundle -download geode-1.11-cluster-app-mysql-perf_test_mysql
+install_bundle -download geode-1-cluster-app-mysql-perf_test_mysql
 ```
 
 ## Use Case
@@ -41,9 +41,7 @@ cd_app perf_test_mysql; cd bin_sh
 First, add a locator and members to the `mysql` cluster. All bundles come without locators and members.
 
 ```console
-add_locator
-add_member
-add_member
+add_locator; add_member; add_member
 ```
 
 Run the cluster.
@@ -54,7 +52,7 @@ start_cluster
 
 ## Running `test_group`
 
-The `test_group` script creates mock data for `Customer` and `Order` objects and ingests them into the Geode/GemFire cluster which in turn writes to MySQL via the `CacheWriterLoaderPkDbImpl` plugin included in the `geode-addon` distribution. The same plugin is also registered to retrieve data from MySQL for cache misses in the cluster.
+The `test_group` script creates mock data for `Customer` and `Order` objects and ingests them into the Geode/GemFire cluster which in turn writes to MySQL via the `CacheWriterLoaderPkDbImpl` plugin included in the `padogrid` distribution. The same plugin is also registered to retrieve data from MySQL for cache misses in the cluster.
 
 ```console
 cd_app perf_test_mysql; cd bin_sh
