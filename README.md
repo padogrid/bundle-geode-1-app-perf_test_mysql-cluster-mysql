@@ -58,3 +58,9 @@ The `test_group` script creates mock data for `Customer` and `Order` objects and
 cd_app perf_test_mysql; cd bin_sh
 ./test_group -prop ../etc/group-factory.properties -run
 ```
+
+## Tearing Down
+
+```
+stop_cluster
+```
