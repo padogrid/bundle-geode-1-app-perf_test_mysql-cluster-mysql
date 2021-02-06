@@ -12,7 +12,7 @@ install_bundle -download bundle-geode-1-app-perf_test_mysql-cluster-mysql
 
 In this use case, we synchronize the select Geode/GemFire regions with the MySQL database tables. The `CacheWriterLoaderPkDbImpl` plugin synchronizes the database tables with all region read and write operations, i.e., `get`, `getAll`, `put`, `putAll`, `destroy`, and `remove`.
 
-![DB Sync Diagram](/images/db-sync.png)
+![DB Sync Diagram](images/db-sync.png)
 
 ## Configuring MySQL
 
